@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+
+body {
+    background-color: rgb(178, 190, 153);
+    display: grid;
+    grid-template: 70px auto auto / auto;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+
+header span {
+    font-size: 2rem;
+    font-weight: 500;
+    color: brown;
+}
+
+
+.form {
+    display: grid;
+    grid-template: auto auto / auto;
+    justify-items: center;
+    gap: 15px;
+
+}
+
+.todo {
+    display: grid;
+    width: 100%;
+    justify-items: center;
+}
+
+#task_input {
+    width: 400px;
+    height: 35px;
+}
+
+.label {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.add_task {
+    margin-top: 15px;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.add_task:hover {
+    border: 1px solid rgba(0, 0, 0, 1)
+}
+
+.task_input {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+
+  }
+
+/* hide close window cross */
+.task_input::-ms-clear {  display: none; width : 0; height: 0; }
+.task_input::-webkit-search-decoration,
+.task_input::-ms-reveal {  display: none; width : 0; height: 0; }
+.task_input::-webkit-search-cancel-button,
+.task_input::-webkit-search-results-button,
+.task_input::-webkit-search-results-decoration { display: none; }
+.task_input::-webkit-search-decoration,
+.task_input::-webkit-search-cancel-button,
+.task_input::-webkit-search-results-button,
+.task_input::-webkit-search-results-decoration { display: none; }
+
+
+
